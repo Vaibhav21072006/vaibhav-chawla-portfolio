@@ -39,6 +39,25 @@ export const PROJECTS: Project[] = [
     featured: true
   },
   {
+    id: "research-ai-papers",
+    title: "Research AI Papers",
+    tagline: "AI-Powered Academic & Scientific Paper Search & Synthesizer",
+    description: "An intelligent platform designed to search, analyze, and synthesize scientific research papers using advanced AI language models for rapid academic discovery.",
+    status: "Live",
+    category: "AI / ML",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "AI Search Engine", "Vercel"],
+    features: [
+      "Real-time semantic research paper search and analysis",
+      "Automated paper abstract summarization and key findings extraction",
+      "Interactive reader dashboard for scientific research"
+    ],
+    challenges: "Processing complex scientific nomenclature and extracting concise key takeaways from long-format academic papers.",
+    solutions: "Implemented tailored prompt pipelines and structured JSON output parsers for key academic insights.",
+    githubUrl: "https://github.com/Vaibhav21072006",
+    liveUrl: "https://research-ai-papers.vercel.app/",
+    featured: true
+  },
+  {
     id: "airshield-tryon",
     title: "AirShield — AI Virtual Try-On",
     tagline: "Computer Vision Pose Estimation & Garment Simulation Framework",
