@@ -36,7 +36,9 @@ export const PROJECTS: Project[] = [
     solutions: "Designed a lightweight token sliding window and custom queueing mechanism in TypeScript for seamless context preservation.",
     githubUrl: "https://github.com/Vaibhav21072006",
     liveUrl: "https://interview-elite.vercel.app/",
-    featured: true
+    featured: true,
+    position3D: [-3.8, 1.2, -4],
+    accentColor: "#3b82f6"
   },
   {
     id: "research-ai-papers",
@@ -55,7 +57,9 @@ export const PROJECTS: Project[] = [
     solutions: "Implemented tailored prompt pipelines and structured JSON output parsers for key academic insights.",
     githubUrl: "https://github.com/Vaibhav21072006",
     liveUrl: "https://research-ai-papers.vercel.app/",
-    featured: true
+    featured: true,
+    position3D: [3.8, 0.8, -7],
+    accentColor: "#06b6d4"
   },
   {
     id: "airshield-tryon",
@@ -73,7 +77,9 @@ export const PROJECTS: Project[] = [
     challenges: "Handling real-world occlusions and variable ambient light conditions during pose landmark detection.",
     solutions: "Integrated pre-filtered MediaPipe pose landmarking combined with affine dynamic warping filters.",
     githubUrl: "https://github.com/Vaibhav21072006",
-    featured: true
+    featured: true,
+    position3D: [-3.2, -1.8, -10],
+    accentColor: "#a855f7"
   },
   {
     id: "smart-navigation",
@@ -91,7 +97,9 @@ export const PROJECTS: Project[] = [
     challenges: "Balancing exponential route expansion time when evaluating dual-weighted heuristics.",
     solutions: "Implemented bounded Pareto-optimal search trees with cached spatial grid clusters.",
     githubUrl: "https://github.com/Vaibhav21072006",
-    featured: true
+    featured: true,
+    position3D: [3.5, -1.2, -13],
+    accentColor: "#10b981"
   },
   {
     id: "snapchat-ar",
@@ -109,7 +117,9 @@ export const PROJECTS: Project[] = [
     challenges: "Optimizing high-polygon 3D meshes to maintain 60 FPS performance on mobile devices.",
     solutions: "Retopologized high-poly meshes into low-poly LOD models and baked high-res lighting into normal maps.",
     liveUrl: "https://snapchat.com",
-    featured: true
+    featured: true,
+    position3D: [0, 1.8, -16],
+    accentColor: "#f59e0b"
   }
 ];
 

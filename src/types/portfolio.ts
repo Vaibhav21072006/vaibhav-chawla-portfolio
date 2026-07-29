@@ -12,6 +12,8 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   featured: boolean;
+  position3D?: [number, number, number];
+  accentColor?: string;
 }
 
 export interface SkillCategory {
