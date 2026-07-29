@@ -96,17 +96,17 @@ export const ChamberOverlaySections: React.FC<ChamberOverlaySectionsProps> = ({ 
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 onClick={() => onSelectProject(project)}
-                className="glass-card-3d rounded-3xl p-8 flex flex-col justify-between cursor-pointer group"
+                className="glass-card-3d rounded-3xl p-6 sm:p-8 flex flex-col justify-between cursor-pointer group hover:border-cyan-400/50"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 rounded-full text-xs font-mono bg-white/5 text-cyan-300 border border-white/10">
+                    <span className="px-3 py-1 rounded-full text-xs font-mono bg-blue-500/10 text-cyan-300 border border-blue-500/20">
                       {project.category}
                     </span>
                     <span className={`text-xs font-mono px-2.5 py-0.5 rounded-full ${
                       project.status === 'Live' ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
                     }`}>
-                      {project.status}
+                      ● {project.status}
                     </span>
                   </div>
 
@@ -115,13 +115,26 @@ export const ChamberOverlaySections: React.FC<ChamberOverlaySectionsProps> = ({ 
                     <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity text-cyan-400" />
                   </h3>
 
-                  <p className="text-xs text-cyan-300/70 font-mono mt-1 mb-4">{project.tagline}</p>
+                  <p className="text-xs text-cyan-300/80 font-mono mt-1 mb-4">{project.tagline}</p>
                   <p className="text-sm text-gray-300 leading-relaxed mb-6 line-clamp-2">{project.description}</p>
                 </div>
 
-                <div className="flex items-center gap-2 pt-4 border-t border-white/5 text-xs text-blue-400 font-mono font-medium">
-                  <span>Enter Technical Chamber</span>
-                  <ArrowUpRight className="w-4 h-4" />
+                <div className="flex items-center justify-between pt-4 border-t border-white/10 text-xs font-mono">
+                  <span className="text-cyan-400 flex items-center gap-1 font-medium group-hover:translate-x-1 transition-transform">
+                    Enter Technical Chamber &rarr;
+                  </span>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="px-3 py-1.5 rounded-full bg-cyan-400/10 text-cyan-300 hover:bg-cyan-400 hover:text-black transition-all flex items-center gap-1.5 font-semibold"
+                    >
+                      <span>Live Demo</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}
